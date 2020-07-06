@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Microverse bootcamp surveyform</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -15,15 +16,16 @@
     <p id="description"> Thank you for providing feedback for our services</p>
 
     <form id="survey-form">
-      <label id="name-label">Name</label>
+      <label class="questions" id="name-label">Name</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      <label id="email-label">E-mail</label>
+      <label class="questions" id="email-label">E-mail</label>
       <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
-      <label id="number-label">Age</label>
+      <label class="questions" id="number-label">Age</label>
       <input type="number" id="number" name="number" min="15" max="25" placeholder="Enter your age"> 
 
-      <label>How satisfied are you with our program</label>
+      <label class="questions">How satisfied are you with our program</label>
       <select id="dropdown">
+        <option selected hidden>--select one option--</option>
         <option>very not satisfied</option>
         <option>not satisfied</option>
         <option>neutral</option>
@@ -31,12 +33,12 @@
         <option>very satisfied</option>
       </select>
 
-      <label>Gender</label>
+      <label class="questions">Gender</label>
       <input type="radio" name="gender" value='male'/> <label>male</label>
       <input type="radio" name="gender" value='female' /> <label>female</label>
       <input type="radio" name="gender" value='unsigned' /> <label>I'd rather not say</label>
 
-      <label>Which programming languages did you use through the program</label>
+      <label class="questions">Which programming languages did you use through the program</label>
       <label class='checkLine'><input type="checkbox" value="C" /> C </label>
       <label class='checkLine'><input type="checkbox" value="C++" /> C++ </label>
       <label class='checkLine'><input type="checkbox" value="C#" /> C# </label>
@@ -45,6 +47,7 @@
       <label class='checkLine'><input type="checkbox" value="PHP" /> PHP </label>
       <label class='checkLine'><input type="checkbox" value="Python" /> Python </label>
 
+      <label class="questions">Add any additional comments</label>
       <textarea name="additional_comments" placeholder="Anything else..."></textarea>
 
       <input type='submit' id="submit" value="Submit Form" />

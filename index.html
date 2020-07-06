@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Microverse bootcamp surveyform</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
-    </script>
-    <script  src="js/index.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microverse bootcamp surveyform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
 
-    <h1 id="title"> Microverse Bootcamp Survey</h1>
-    <p id="description"> Thank you for providing feedback for our services</p>
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+  </script>
+  <script src="js/index.js"></script>
 
-    <form id="survey-form">
-      <label class="questions" id="name-label">Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      <label class="questions" id="email-label">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
-      <label class="questions" id="number-label">Age</label>
-      <input type="number" id="number" name="number" min="15" max="25" placeholder="Enter your age"> 
+  <h1 id="title"> Microverse Bootcamp Survey</h1>
+  <p id="description"> Thank you for providing feedback for our services</p>
 
-      <label class="questions">How satisfied are you with our program</label>
-      <select id="dropdown">
-        <option selected hidden>--select one option--</option>
-        <option>very not satisfied</option>
-        <option>not satisfied</option>
-        <option>neutral</option>
-        <option>satisfied</option>
-        <option>very satisfied</option>
-      </select>
+  <form id="survey-form">
+    <label class="questions" id="name-label">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <label class="questions" id="email-label">E-mail</label>
+    <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+    <label class="questions" id="number-label">Age</label>
+    <input type="number" id="number" name="number" min="15" max="25" placeholder="Enter your age">
 
-      <label class="questions">Gender</label>
-      <input type="radio" name="gender" value='male'/> <label>male</label>
-      <input type="radio" name="gender" value='female' /> <label>female</label>
-      <input type="radio" name="gender" value='unsigned' /> <label>I'd rather not say</label>
+    <label class="questions">How satisfied are you with our program</label>
+    <select id="dropdown">
+      <option selected hidden>--select one option--</option>
+      <option>very not satisfied</option>
+      <option>not satisfied</option>
+      <option>neutral</option>
+      <option>satisfied</option>
+      <option>very satisfied</option>
+    </select>
 
-      <label class="questions">Which programming languages did you use through the program</label>
-      <label class='checkLine'><input type="checkbox" value="C" /> C </label>
-      <label class='checkLine'><input type="checkbox" value="C++" /> C++ </label>
-      <label class='checkLine'><input type="checkbox" value="C#" /> C# </label>
-      <label class='checkLine'><input type="checkbox" value="Java" /> Java </label>
-      <label class='checkLine'><input type="checkbox" value="JavaScript" /> JavaScript </label>
-      <label class='checkLine'><input type="checkbox" value="PHP" /> PHP </label>
-      <label class='checkLine'><input type="checkbox" value="Python" /> Python </label>
+    <label class="questions">Gender</label>
+    <input type="radio" name="gender" value='male' /> <label>male</label>
+    <input type="radio" name="gender" value='female' /> <label>female</label>
+    <input type="radio" name="gender" value='unsigned' /> <label>I'd rather not say</label>
 
-      <label class="questions">Add any additional comments</label>
-      <textarea name="additional_comments" placeholder="Anything else..."></textarea>
+    <label class="questions">Which programming languages did you use through the program</label>
+    <label class='checkLine'><input type="checkbox" value="C" /> C </label>
+    <label class='checkLine'><input type="checkbox" value="C++" /> C++ </label>
+    <label class='checkLine'><input type="checkbox" value="C#" /> C# </label>
+    <label class='checkLine'><input type="checkbox" value="Java" /> Java </label>
+    <label class='checkLine'><input type="checkbox" value="JavaScript" /> JavaScript </label>
+    <label class='checkLine'><input type="checkbox" value="PHP" /> PHP </label>
+    <label class='checkLine'><input type="checkbox" value="Python" /> Python </label>
 
-      <input type='submit' id="submit" value="Submit Form" />
-    </form>
-  </body>
+    <label class="questions">Add any additional comments</label>
+    <textarea name="additional_comments" placeholder="Anything else..."></textarea>
+
+    <input type='submit' id="submit" value="Submit Form" />
+  </form>
+</body>
+
 </html>

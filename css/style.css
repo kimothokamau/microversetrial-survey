@@ -1,7 +1,8 @@
 body {
     text-align: center;
-    background-color: antiquewhite;
+    background-color: rgb(150,200,150);
     font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
 }
 
 form {
@@ -11,6 +12,11 @@ form {
     background-color: darkgreen;
     padding: 40px;
     color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0,0,0,.7);
+    box-sizing: border-box;
 }
 
 .questions {
@@ -27,7 +33,7 @@ form>*+* {
 
 input, select {
     width: 100%;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin-top: 10px;
     box-sizing: border-box;
     border-radius: 4px;
@@ -50,6 +56,8 @@ textarea {
     margin-top: 10px;
     height: 80px;
     border-radius: 4px;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 5px;
 }
 
 #submit {
@@ -61,4 +69,12 @@ textarea {
     background-color: grey;
     border: 2px solid grey;
     border-radius: 5px;
+}
+
+@media (max-width: 450px){
+    form {
+        width: 100% !important;
+        border-radius: 0;
+        box-shadow: none;
+    }
 }

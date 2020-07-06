@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+form>* {
+    display: block;
+}
+
+form>*+* {
+    margin-top: 30px;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+input[type='radio'], input[type='radio']+label, input[type='checkbox'], input[type='checkbox']+label {
+    display: inline-block;
+    width: auto;
+}
+
+.checkLine {
+    margin-top: 10px !important;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}

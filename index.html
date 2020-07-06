@@ -15,11 +15,39 @@
     <p id="description"> Thank you for providing feedback for our services</p>
 
     <form id="survey-form">
-      <input type="text" id="name" name="name">
-      <input type="email" id="email" name="email">
-      <input type="number" id="number" name="number"> 
+      <label id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label id="email-label">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+      <label id="number-label">Age</label>
+      <input type="number" id="number" name="number" min="15" max="25" placeholder="Enter your age"> 
 
+      <label>How satisfied are you with our program</label>
+      <select id="dropdown">
+        <option>very not satisfied</option>
+        <option>not satisfied</option>
+        <option>neutral</option>
+        <option>satisfied</option>
+        <option>very satisfied</option>
+      </select>
 
+      <label>Gender</label>
+      <input type="radio" name="gender" value='male'/> <label>male</label>
+      <input type="radio" name="gender" value='female' /> <label>female</label>
+      <input type="radio" name="gender" value='unsigned' /> <label>I'd rather not say</label>
+
+      <label>Which programming languages did you use through the program</label>
+      <label class='checkLine'><input type="checkbox" value="C" /> C </label>
+      <label class='checkLine'><input type="checkbox" value="C++" /> C++ </label>
+      <label class='checkLine'><input type="checkbox" value="C#" /> C# </label>
+      <label class='checkLine'><input type="checkbox" value="Java" /> Java </label>
+      <label class='checkLine'><input type="checkbox" value="JavaScript" /> JavaScript </label>
+      <label class='checkLine'><input type="checkbox" value="PHP" /> PHP </label>
+      <label class='checkLine'><input type="checkbox" value="Python" /> Python </label>
+
+      <textarea name="additional_comments" placeholder="Anything else..."></textarea>
+
+      <input type='submit' id="submit" value="Submit Form" />
     </form>
   </body>
 </html>
